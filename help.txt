@@ -1,0 +1,9 @@
+make help
+                    Print help text.
+
+make start-client
+                    Start client process.
+
+make start-server
+                    Start server process.
+
