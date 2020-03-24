@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nu-bo</title>
+    <style>
+        ul, li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card {
+            font-size: 16px;
+            /*width: 16px;*/
+            padding: 20px 10px;
+            background-color: blue;
+            background-color: white;
+            color: aqua;
+            border: 1px solid black;
+            border-radius: 5px;
+            display: inline-block;
+
+            padding: 0;
+            margin: 0;
+
+            width: 70px;
+        }
+
+        .card:not(.card-empty):hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        .card-pile {
+            transform: rotate(-90deg);
+        }
+
+        .top, .middle, .bottom {
+            display: block;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .top {
+            text-align: left;
+            color: black;
+            padding: 5px;
+        }
+
+        .middle {
+            padding: 10px 0;
+            font-size: 30px;
+            color: red;
+            text-align: center;
+        }
+
+        .bottom {
+            text-align: right;
+            color: black;
+            padding: 5px;
+        }
+
+        .card-1 > .middle,
+        .card-2 > .middle,
+        .card-3 > .middle,
+        .card-4 > .middle {
+            color: green;
+        }
+
+        .card-5 > .middle,
+        .card-6 > .middle,
+        .card-7 > .middle,
+        .card-8 > .middle {
+            color: red;
+        }
+
+        .card-9 > .middle,
+        .card-10 > .middle,
+        .card-11 > .middle,
+        .card-12 > .middle {
+            color: purple;
+        }
+
+        .card-wild > .middle {
+            color: orange;
+        }
+
+        .card-vertical {
+            transform: rotate(-90deg);
+            margin: 0 22px;
+        }
+    </style>
+</head>
+<body>
+<section>
+<!--    <ul class="player">-->
+<!--        <li class="card card-pile">12</li>-->
+<!--        <li class="card card-discard">5</li>-->
+<!--        <li class="card card-discard">8</li>-->
+<!--        <li class="card card-discard">?</li>-->
+<!--        <li class="card card-discard">7</li>-->
+<!--    </ul>-->
+    <ul>
+        <li class="card card-1">
+            <div class="top">1</div>
+            <div class="middle">1</div>
+            <div class="bottom">1</div>
+        </li>
+        <li class="card card-2">
+            <div class="top">2</div>
+            <div class="middle">2</div>
+            <div class="bottom">2</div>
+        </li>
+        <li class="card card-3">
+            <div class="top">3</div>
+            <div class="middle">3</div>
+            <div class="bottom">3</div>
+        </li>
+        <li class="card card-4">
+            <div class="top">4</div>
+            <div class="middle">4</div>
+            <div class="bottom">4</div>
+        </li>
+        <li class="card card-5">
+            <div class="top">5</div>
+            <div class="middle">5</div>
+            <div class="bottom">5</div>
+        </li>
+        <li class="card card-6">
+            <div class="top">6</div>
+            <div class="middle">6</div>
+            <div class="bottom">6</div>
+        </li>
+        <li class="card card-7">
+            <div class="top">7</div>
+            <div class="middle">7</div>
+            <div class="bottom">7</div>
+        </li>
+        <li class="card card-8">
+            <div class="top">8</div>
+            <div class="middle">8</div>
+            <div class="bottom">8</div>
+        </li>
+        <li class="card card-9">
+            <div class="top">9</div>
+            <div class="middle">9</div>
+            <div class="bottom">9</div>
+        </li>
+        <li class="card card-10">
+            <div class="top">10</div>
+            <div class="middle">10</div>
+            <div class="bottom">10</div>
+        </li>
+        <li class="card card-11">
+            <div class="top">11</div>
+            <div class="middle">11</div>
+            <div class="bottom">11</div>
+        </li>
+        <li class="card card-12">
+            <div class="top">12</div>
+            <div class="middle">12</div>
+            <div class="bottom">12</div>
+        </li>
+        <li class="card card-wild">
+            <div class="top">?</div>
+            <div class="middle">?</div>
+            <div class="bottom">?</div>
+        </li>
+        <li class="card card-empty">
+            <div class="top">&nbsp;</div>
+            <div class="middle">&nbsp;</div>
+            <div class="bottom">&nbsp;</div>
+        </li>
+    </ul>
+    <hr />
+    <ul>
+        <li class="card card-vertical card-wild">
+            <div class="top">?</div>
+            <div class="middle">?</div>
+            <div class="bottom">?</div>
+        </li>
+        <li class="card card-wild">
+            <div class="top">?</div>
+            <div class="middle">?</div>
+            <div class="bottom">?</div>
+        </li>
+    </ul>
+    <hr />
+    <h1>Brian</h1>
+</section>
+</body>
+</html>
